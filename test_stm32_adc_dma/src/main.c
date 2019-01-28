@@ -33,8 +33,8 @@ int main(void) {
 	init_DMA2();
 
 	(*((int *) (0x40012000u + 0x8u))) |= 1 << 30; //start ADC
-	for (;;)
-		;
+
+	while(1);
 }
 
 void init_GPIOB(void) {
